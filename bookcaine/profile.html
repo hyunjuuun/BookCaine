@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link rel="stylesheet" href="css/buttons.css">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
                     <fieldset>
                         <legend class="d-none">도서 검색 필드</legend>
                         <input type="text" name="search" value="제목,저자,출판사 검색">
-                        <input class="button" type="submit" value="검색">
+                        <!-- <input class="button" type="submit" value="검색"> -->
                     </fieldset>
                 </form>
             </section>
@@ -39,10 +41,28 @@
         </section>
     </header>
     <main id="main">
-        <section class="profile">
-            <img src="" alt="사용자이미지">
-            <p>홍길동</p>
+        <section class="profile-top">
+            <section class="profile">
+                <h1 class="d-none">main-profile</h1>
+                <div class="main-profile">
+                    <i class="icon-user-circle-o"></i>
+                    <div class="user-name">홍길동</div>
+                    <div class="status">책을 좋아하는 사람 :)</div>
+                </div>
+            </section>
+            <nav>
+                <h1>참여중인도전방</h1>
+                <ul>
+                    <li><a href="">시대를 매혹한 철학</a></li>
+                    <li><a href="">12가지 인생의 법칙</a></li>
+                    <li><a href="">열한계단</a></li>
+                </ul>
+            </nav>
         </section>
+        <nav class="profile-edit">
+            <h1 class="d-none">profile-edit</h1>
+            <a href="#" class="button button-rounded button-tiny">프로필 수정</a>
+        </nav>
     </main>
     <footer id="footer"></footer>
 </body>

@@ -1,0 +1,56 @@
+.d-none{
+    display: none !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* ------------------ header ------------------ */
+
+header{
+    background-color: #ccee8ed2;
+}
+
+.book-search-form fieldset{
+    background-color: white;
+}
+
+.quick-menu>ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------------------ main ------------------ */
+
+.profile-top{
+    display: flex;
+}
+
+.main-profile{
+    display: inline-block;
+    text-align: center;
+    margin: 12px;
+    margin-right: 30px;
+}
+
+    .main-profile > i{
+        font-size: 4.5rem;
+    }
+
+    .main-profile .status{
+        font-size: 0.8rem;
+    }
+
+.profile-edit>a{
+    width: 100%;
+}

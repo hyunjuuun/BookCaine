@@ -1,0 +1,48 @@
+@import url("myreset.css");
+
+.content-box{
+    height: inherit;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff000020;
+    min-height: inherit;
+}
+
+/* ---------------------------------------------------- */
+
+#header{
+    height: 70px;
+    background-color: #ffff0020;
+}
+
+#visual{
+    height: 171px;
+    background-color: rgb(0, 255, 0);
+}
+
+#body{
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+    #body>.content-box{
+        display: flex;
+    }
+
+    #aside{
+        height: inherit;
+        width: 205px;
+        background-color: red;
+    }
+
+    #main{
+        height: inherit;
+        width: 755px;
+        background-color: yellow;
+    }
+
+#footer{
+    height: 100px;
+    background-color: rgb(155, 155, 155);
+}
