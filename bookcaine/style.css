@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    --text-decoration: none;
+}
+
+header{
+    background-color: chartreuse;
+    height: 100px;
+}
+
+.top{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.top ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.search{
+    display: flex;
+    flex-grow: 1fr 0;
+}
+
+
+.nav-menu > ul{
+    display: flex;
+}
+
+.nav-menu>ul>li{
+    width: 100%;
+}

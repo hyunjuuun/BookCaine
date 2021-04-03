@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>책에 중독되는 순간! BookCaine</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+
+<body>
+    <h1 id="title">책에 중독되는 순간!<br>Book-Caine</h1>
+
+    <div id="grid">
+        <nav>
+            <h1 class="hide">책 목록</h1>
+            <ul>
+                <li><a href="./books/book1.html">열한계단</a></li>
+                <li>우리는 언젠가 만난다</li>
+                <li>지대넓얕</li>
+                <li>시민의교양</li>
+                <li>데미안</li>
+            </ul>
+        </nav>
+        <section id="article">
+            <h1>책 설명</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione rem quam, quaerat omnis nesciunt sit,
+                ad
+                minima atque aliquid consequatur iusto fuga ducimus voluptate. Placeat nobis nulla beatae obcaecati in.
+            </p>
+        </section>
+    </div>
+
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value === 'night') {
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value = 'day';
+    } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value = 'night';
+    }
+    ">
+
+</body>
+
+</html>
