@@ -15,6 +15,15 @@ li{
     list-style: none;
 }
 
+img{
+    width: 100px;
+    border: 0.5px solid black;
+}
+
+img+li{
+    text-align: center;
+}
+
 /* ------------------ header ------------------ */
 
 header{
@@ -51,6 +60,29 @@ header{
         font-size: 0.8rem;
     }
 
-.profile-edit>a{
+    .main-profile .follow{
+        display: flex;
+        width: 100%;
+        font-size: 0.7rem;
+        justify-content: space-between;
+    }
+
+.profile-edit input{
     width: 100%;
 }
+
+
+    .books-done>.books-done-top{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .books-done>.books-done-list>ul{
+        display: flex;
+        gap: 15px;
+    }
+
+    .books-done>.books-done-list>ul>a{
+        width: 100px;
+    }

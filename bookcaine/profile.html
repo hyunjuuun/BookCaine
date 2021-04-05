@@ -8,7 +8,7 @@
     <title>Profile</title>
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="fontello/css/fontello.css">
-    <link rel="stylesheet" href="css/buttons.css">
+    <!-- <link rel="stylesheet" href="css/buttons.css"> -->
 </head>
 
 <body>
@@ -48,6 +48,14 @@
                     <i class="icon-user-circle-o"></i>
                     <div class="user-name">홍길동</div>
                     <div class="status">책을 좋아하는 사람 :)</div>
+                    <nav class="follow">
+                        <a href="">
+                            <li>팔로워 50</li>
+                        </a>
+                        <a href="">
+                            <li>팔로잉 31</li>
+                        </a>
+                </div>
                 </div>
             </section>
             <nav>
@@ -61,7 +69,30 @@
         </section>
         <nav class="profile-edit">
             <h1 class="d-none">profile-edit</h1>
-            <a href="#" class="button button-rounded button-tiny">프로필 수정</a>
+            <a href="#"><input type="button" value="프로필 수정"></a>
+            <!-- <a href="#" class="button button-rounded button-tiny">프로필 수정</a> -->
+        </nav>
+        <nav class="books-done">
+            <div class="books-done-top">
+                <h1>읽은 책 141</h1>
+                <a href="#">> 더보기</a>
+            </div>
+            <nav class="books-done-list">
+                <ul>
+                    <a href="">
+                        <img src="images/book1.jpg" alt="">
+                        <li>시대를 매혹한 철학</li>
+                    </a>
+                    <a href="">
+                        <img src="images/book2.jfif" alt="">
+                        <li>12가지 인생의 법칙</li>
+                    </a>
+                    <a href="">
+                        <img src="images/book3.jfif" alt="">
+                        <li>열한계단</li>
+                    </a>
+                </ul>
+            </nav>
         </nav>
     </main>
     <footer id="footer"></footer>
