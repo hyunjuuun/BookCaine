@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .d-none{
     display: none !important;
 }
@@ -33,6 +37,10 @@ header{
 .book-search-form fieldset{
     background-color: white;
 }
+
+    .book-search-form input{
+        width: 100%;
+    }
 
 .quick-menu>ul{
     display: flex;
@@ -86,3 +94,21 @@ header{
     .books-done>.books-done-list>ul>a{
         width: 100px;
     }
+
+.history>ul{
+    display: flex;
+    border-top: 0.5px solid gray;
+    border-bottom: 0.5px solid gray;
+    padding: 12px;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 1024px){
+    body{
+        background-color: yellow;
+    }
+
+    #service-title>h1{
+        display: inline-block;
+    }
+}

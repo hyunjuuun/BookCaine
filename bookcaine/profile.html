@@ -22,11 +22,11 @@
             <section class="book-search-form">
                 <h1 class="d-none">도서검색폼</h1>
                 <form action="">
-                    <fieldset>
-                        <legend class="d-none">도서 검색 필드</legend>
-                        <input type="text" name="search" value="제목,저자,출판사 검색">
-                        <!-- <input class="button" type="submit" value="검색"> -->
-                    </fieldset>
+                    <!-- <fieldset> -->
+                    <!-- <legend class="d-none">도서 검색 필드</legend> -->
+                    <input type="text" name="search" placeholder="제목,저자,출판사 검색">
+                    <!-- <input class="button" type="submit" value="검색"> -->
+                    <!-- </fieldset> -->
                 </form>
             </section>
 
@@ -73,13 +73,15 @@
             <!-- <a href="#" class="button button-rounded button-tiny">프로필 수정</a> -->
         </nav>
         <nav class="books-done">
+            <h1 class="d-none">읽은 책 전체 바로가기</h1>
             <div class="books-done-top">
                 <h1>읽은 책 141</h1>
                 <a href="#">> 더보기</a>
             </div>
             <nav class="books-done-list">
+                <h1 class="d-none">읽은 책 리스트</h1>
                 <ul>
-                    <a href="">
+                    <a href="#">
                         <img src="images/book1.jpg" alt="">
                         <li>시대를 매혹한 철학</li>
                     </a>
@@ -93,6 +95,13 @@
                     </a>
                 </ul>
             </nav>
+        </nav>
+        <nav class="history">
+            <h1 class="d-none">지난 활동</h1>
+            <ul>
+                <li><a href="">나의 리뷰></a></li>
+                <li><a href="">좋아요 누른 글></a></li>
+            </ul>
         </nav>
     </main>
     <footer id="footer"></footer>
