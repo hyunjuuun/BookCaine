@@ -3,6 +3,7 @@
 }
 
 html,body{
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -23,15 +24,6 @@ ul{
 
 li{
     list-style: none;
-}
-
-img{
-    width: 100px;
-    border: 0.5px solid black;
-}
-
-img+li{
-    text-align: center;
 }
 
 /* ------------------ header ------------------ */
@@ -56,19 +48,38 @@ header{
 
 /* ------------------ main ------------------ */
 
-.profile-top{
+main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 50px 1fr 36px 1fr;
+    grid-template-areas: 
+    "main group"
+    "edit edit"
+    "read read"
+    "history history"
+    "daily daily";
+    gap: 10px;
+}
+
+.main-profile, .group{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-profile{
-    display: inline-block;
-    text-align: center;
-    margin: 12px;
-    margin-right: 30px;
+    grid-area: main;
 }
 
-    .main-profile > i{
-        font-size: 4.5rem;
+    .main-profile .user-name{
+        font-weight: bold;
+    }
+
+    .main-profile>img{
+        width: 100px;
+        height: 100px;
     }
 
     .main-profile .status{
@@ -77,15 +88,46 @@ header{
 
     .main-profile .follow{
         display: flex;
-        width: 100%;
+        width: 200px;
         font-size: 0.7rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
-.profile-edit input{
-    width: 100%;
+.group{
+    grid-area: group;
 }
 
+.group h1{
+    margin: 8px;
+}
+
+.group li{
+    margin: 5px;
+}
+
+.profile-edit{
+    grid-area: edit;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-edit>a{
+    display: inline-block;
+    height: 30px;
+    width: 95%;
+}
+
+.profile-edit input{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.books-done{
+    grid-area: read;
+}
 
     .books-done>.books-done-top{
         display: flex;
@@ -93,14 +135,28 @@ header{
         margin-top: 20px;
     }
 
-    .books-done>.books-done-list>ul{
+    .books-done>.books-done-list ul{
         display: flex;
         gap: 15px;
+        justify-content: space-evenly;
     }
 
-    .books-done>.books-done-list>ul>a{
+    .books-done>.books-done-list ul>a{
         width: 100px;
     }
+
+    .books-done-list img{
+        width: 100px;
+        border: 0.5px solid black;
+    }
+
+    .books-done-list img+li{
+        text-align: center;
+    }
+
+.history{
+    grid-area: history;
+}
 
 .history>ul{
     display: flex;
@@ -111,29 +167,10 @@ header{
 }
 
 @media screen and (min-width: 1000px){
-    #root{
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 250px 250px 250px 250px 1fr;
-        grid-template-rows: 115px 1fr 1fr;
-        grid-template-areas: 
-        "header header header header header header"
-        ". main books group past ."
-        ". main daily daily daily .";
-    }
 
-    #header{
-        grid-area: header;
-    }
-
-    div.main-profile{
-        grid-area: main;
-        background-color: yellow;
-    }
-
-    .group{
-        grid-area: group;
-        background-color: tomato;
+    header>section{
+        width: 1000px;
+        margin: 0 auto;
     }
 
     #service-title{
@@ -145,4 +182,57 @@ header{
         width: 306px;
         margin-left: 20px;
     }
+
+    .quick-menu>ul{
+        justify-content: unset;
+        gap: 100px;
+    }
+
+    #main{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 330px 330px 330px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        ". main read group ."
+        ". daily daily daily ."
+    }
+
+    .main-profile{
+        grid-area: main;
+    }
+    
+        .main-profile>img{
+            width: 150px;
+            height: 150px;
+        }
+
+        .main-profile .user-name{
+            font-size: 1.2rem;
+        }
+
+        .main-profile .status{
+            font-size: 1rem;
+        }
+    
+        .main-profile .follow{
+            font-size: 0.9rem;
+        }
+
+    .profile-edit{
+        grid-area: main;
+    }
+
+    .group{
+        grid-area: group;
+    }
+
+    .history{
+        grid-area: main;
+    }
+    
+    img{
+        width: 83px;
+    }
+    
 }
