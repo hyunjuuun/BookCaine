@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .d-none{
     display: none !important;
 }
@@ -34,12 +40,13 @@ header{
     background-color: #ccee8ed2;
 }
 
-.book-search-form fieldset{
+/* .book-search-form fieldset{
     background-color: white;
-}
+} */
 
     .book-search-form input{
         width: 100%;
+        height: 36px;
     }
 
 .quick-menu>ul{
@@ -103,12 +110,39 @@ header{
     justify-content: space-evenly;
 }
 
-@media (min-width: 1024px){
-    body{
+@media screen and (min-width: 1000px){
+    #root{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 250px 250px 250px 250px 1fr;
+        grid-template-rows: 115px 1fr 1fr;
+        grid-template-areas: 
+        "header header header header header header"
+        ". main books group past ."
+        ". main daily daily daily .";
+    }
+
+    #header{
+        grid-area: header;
+    }
+
+    div.main-profile{
+        grid-area: main;
         background-color: yellow;
     }
 
-    #service-title>h1{
+    .group{
+        grid-area: group;
+        background-color: tomato;
+    }
+
+    #service-title{
         display: inline-block;
+    }
+
+    .book-search-form{
+        display: inline-block;
+        width: 306px;
+        margin-left: 20px;
     }
 }
