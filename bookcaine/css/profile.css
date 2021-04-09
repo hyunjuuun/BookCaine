@@ -160,11 +160,19 @@ main{
 
 .history>ul{
     display: flex;
-    border-top: 0.5px solid gray;
-    border-bottom: 0.5px solid gray;
+    border: 0.5px solid gray;
     padding: 12px;
     justify-content: space-evenly;
 }
+
+.daily{
+    grid-area: daily;
+}
+
+    .daily img{
+        margin-top: 40px;   
+        width: 100%;
+    }
 
 @media screen and (min-width: 1000px){
 
@@ -192,19 +200,21 @@ main{
         height: 100%;
         display: grid;
         grid-template-columns: 1fr 330px 330px 330px 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        ". main read group ."
-        ". daily daily daily ."
+        grid-template-rows: 20px 1fr 1fr;
+        grid-template-areas:
+        ". . . . ."
+        ". main read read ."
+        ". group daily daily .";
     }
 
     .main-profile{
         grid-area: main;
+        height: fit-content;
     }
     
         .main-profile>img{
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
         }
 
         .main-profile .user-name{
@@ -221,6 +231,8 @@ main{
 
     .profile-edit{
         grid-area: main;
+        height: fit-content;
+        margin-top: 280px;
     }
 
     .group{
@@ -229,10 +241,15 @@ main{
 
     .history{
         grid-area: main;
+        margin-top: 330px;
     }
     
     img{
         width: 83px;
+    }
+
+    .daily img{
+        margin-top: 0;   
     }
     
 }
