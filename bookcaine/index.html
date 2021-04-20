@@ -6,123 +6,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<header>
-
-</header>
-
-<main>
-
-</main>
-
-<footer>
-
-</footer>
-
-<!-- <body>
-    <div id="root">
-        <header>
-            <div class="top">
-                <h1 id="home-name">책에 중독되는 순간 - BookCaine</h1>
-                <nav>
+<body>
+    <header id="header">
+        <section>
+            <h1 class="d-none">메인</h1>
+            <section id="main-top">
+                <h1>책에 중독되는 순간 | Bookcaine</h1>
+                <nav id="user">
                     <ul>
-                        <li><a href="">회원가입</a></li>
-                        <li><a href="">로그인</a></li>
+                        <li><a href=""><button>회원가입</button></a></li>
+                        <li><a href=""><button>로그인</button></a></li>
                     </ul>
                 </nav>
-            </div>
-
-            입력폼
-            <section class="search">
-                <input type="search" value="제목,저자,출판사 검색"></input>
-                <input type="submit" value="검색">
             </section>
-            <nav class="nav-menu">
+
+            <section class="book-search-form">
+                <h1 class="d-none">도서검색폼</h1>
+                <form action="">
+                    <!-- <fieldset> -->
+                    <!-- <legend class="d-none">도서 검색 필드</legend> -->
+                    <input type="text" name="search" placeholder="제목,저자,출판사 검색">
+                    <!-- <input class="button" type="submit" value="검색"> -->
+                    <!-- </fieldset> -->
+                </form>
+            </section>
+
+            <nav class="quick-menu">
+                <h1 class="d-none">퀵메뉴</h1>
                 <ul>
-                    <li><a href="">홈</a></li>
+                    <li><a href="#">홈</a></li>
                     <li><a href="">도전방</a></li>
-                    <li><a href="">알림</a></li>
-                    <li><a href="">프로필</a></li>
+                    <li><a href="profile/profile.html">프로필</a></li>
                 </ul>
             </nav>
+        </section>
 
-        </header>
 
-        <main>
-            <h1>사람들이 지금 많이 읽고 있는 책</h1>
-            <nav class="popular">
-                <ol>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                </ol>
-            </nav>
+    </header>
+    <main>
+        <h1 class="d-none">content</h1>
+        <nav>
+            <h1 class="section-title">사람들이 지금 많이 읽고 있는 책</h1>
+            <ol class="book-list">
+                <a href="#">
+                    <img src="../images/book1.jpg" alt="">
+                    <li>시대를 매혹한 철학</li>
+                </a>
+                <a href="">
+                    <img src="../images/book2.jfif" alt="">
+                    <li>12가지 인생의 법칙</li>
+                </a>
+                <a href="">
+                    <img src="../images/book3.jfif" alt="">
+                    <li>열한계단</li>
+                </a>
+            </ol>
+        </nav>
+        <nav>
+            <h1 class="section-title">BookCaine 추천</h1>
+            <ul class="book-list">
+                <a href="#">
+                    <img src="../images/book1.jpg" alt="">
+                    <li>시대를 매혹한 철학</li>
+                </a>
+                <a href="">
+                    <img src="../images/book2.jfif" alt="">
+                    <li>12가지 인생의 법칙</li>
+                </a>
+                <a href="">
+                    <img src="../images/book3.jfif" alt="">
+                    <li>열한계단</li>
+                </a>
+            </ul>
+        </nav>
+        <nav>
+            <h1 class="section-title">베스트셀러</h1>
+            <ol class="book-list">
+                <a href="#">
+                    <img src="../images/book1.jpg" alt="">
+                    <li>시대를 매혹한 철학</li>
+                </a>
+                <a href="">
+                    <img src="../images/book2.jfif" alt="">
+                    <li>12가지 인생의 법칙</li>
+                </a>
+                <a href="">
+                    <img src="../images/book3.jfif" alt="">
+                    <li>열한계단</li>
+                </a>
+            </ol>
+        </nav>
+    </main>
 
-            <h1>BookCaine 추천</h1>
-            <nav class="recommend">
-                <ul>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                    <li><img src="" alt="">
-                        <ul>
-                            <li>도서 제목</li>
-                            <li>작가 이름</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-
-        </main>
-
-        <footer>
-
-        </footer>
-    </div>
-</body> -->
+</body>
 
 </html>
