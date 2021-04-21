@@ -7,9 +7,9 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "3fce1eca43f917c8f23e532749abae5d",
-      "css": "user-circle-o",
-      "code": 62142,
+      "uid": "e99461abfef3923546da8d745372c995",
+      "css": "cog",
+      "code": 59392,
       "src": "fontawesome"
     }
   ]

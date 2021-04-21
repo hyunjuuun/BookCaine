@@ -38,6 +38,13 @@ header{
     text-align: center;
 }
 
+.icon-cog{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 19px;
+    right: 10px;
+}
+
 /* .book-search-form fieldset{
     background-color: white;
 } */
