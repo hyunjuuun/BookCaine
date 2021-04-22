@@ -74,7 +74,7 @@ img{
     color: gray;
 }
 
-button{
+#wish > input{
     padding: 0;
     width: 80%;
     height: 36px;
@@ -84,4 +84,38 @@ button{
     color: white;
     border: 1px solid tomato;
     border-radius: 8px;
+}
+
+#review{
+    margin: 0 24px;
+}
+
+#review>ul>li{
+    margin: 16px;
+}
+
+#review .reviewer{
+    text-align: right;
+    color: gray;
+    margin: 8px;
+}
+
+#challenge > div{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#challenge > div > input{
+    width: 95%;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background-color: teal;
+    border-radius: 6px;
+}
+
+#for-bottom-btn{
+    height: 36px;
 }

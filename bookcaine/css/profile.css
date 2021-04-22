@@ -148,6 +148,10 @@ main{
         margin-top: 20px;
     }
 
+    .books-done>.books-done-top > h1{
+        margin: 0 24px;
+    }
+
     .books-done>.books-done-list ul{
         display: flex;
         gap: 15px;
