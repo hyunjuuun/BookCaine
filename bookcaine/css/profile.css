@@ -132,7 +132,7 @@ main{
     width: 95%;
 }
 
-.profile-edit input{
+.profile-edit button{
     padding: 0;
     width: 100%;
     height: 100%;

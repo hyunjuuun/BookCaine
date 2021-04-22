@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* ------------------ header ------------------ */
+
+header{
+    background-color: #ccee8ed2;
+}
+
+#service-title h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    text-align: center;
+}
+
+    .book-search-form input{
+        width: 100%;
+        height: 36px;
+    }
+
+.quick-menu>ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------------------ main ------------------ */
+#book-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 150px;
+    border: 0.5px solid black;
+    margin-top: 15px;
+}
+
+#book-description div{
+    text-align: center;
+}
+
+#book-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#writer{
+    color: gray;
+}
+
+button{
+    padding: 0;
+    width: 80%;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    background-color: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 8px;
+}
