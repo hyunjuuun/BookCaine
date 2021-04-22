@@ -156,6 +156,7 @@ main{
         display: flex;
         gap: 15px;
         justify-content: space-evenly;
+        margin-top: 32px;
     }
 
     .books-done>.books-done-list ul>a{
