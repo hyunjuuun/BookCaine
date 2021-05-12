@@ -1,0 +1,217 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+
+}
+
+body{
+    background: /*#E6FFE6;*//*#d7fdf7;*/ #ebf6ff;
+
+}
+
+#header{
+    text-align: center;
+    padding: 20px 20px;
+    
+    font-family: none; /*폰트 없는게 이쁨*/
+}
+
+
+#header a{
+    text-decoration: initial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 20px;
+
+    color: rgb(92, 148, 100);
+}
+
+.line{
+    border: 1px solid #8cba34;
+}
+
+#wrapper{
+    height: 100%;
+    position: relative;
+}
+
+#main{
+    position: absolute; /*부모가 relative니까 그 절대좌표가 부모기준에서 위치를 맞춘다*/
+    /* justify-content: center; flex일때 먹힘 */
+    
+    /* absolute요소를 중앙에 정렬하는 방법 */
+    left: 50%; 
+    transform: translate(-50%); /*자신의 가로 수치의 절반만큼 마이너스 이동*/
+    width: 460px;
+}
+
+.box{ /*텍스트 위에 span(공백 만들기)*/
+    display: block;
+    margin-top: 18px; /*박스위에 조금씩 띄우려고 test*/
+    /* height: 51px; */
+    /* position: relative; */
+    /* box-sizing: border-box; */
+
+    background-color: white;
+    border-radius: 8px;
+    border: solid 1px #dadada;
+    padding: 10px 110px 10px 14px; /*텍스트 위에 감싸진 box크기를 늘려 보기좋게*/
+
+}
+
+.txt{ /*type = text*/
+    /* display: block; */
+    border: none;
+    width: 100%;
+    height: 29px;
+    font-size: 14px;
+    background-color: white;
+    /* font-weight: bold; */
+
+}
+
+input:focus {  /*텍스트가 선택되면 주변에 생기는 테두리를 없애줌*/
+    outline: none;
+}
+
+
+h3 { /*휴대전화, 이메일 선택자만 위에 텍스트 띄웠음*/
+    margin: 19px 0 8px;
+    font-size: 14px;
+    font-weight: 700;  /*폰트 굵기*/
+}
+
+
+.btn{
+    padding: 21px 0 17px;
+    width: 100%;
+    background-color: rgb(146, 211, 93);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    /* margin: 10px; 마진을 주니까 옆으로 삐져나옴 */ 
+}
+.btn:hover{
+    background-color: rgb(104, 151, 65);
+}
+
+.btn_area { /*버튼위에 하나 감싸줘 마진을 주니 안삐져나옴*/
+    margin: 30px 0 91px;
+    
+}
+
+/*--------------------------생년월일-----------------------------*/
+
+.date{ /*display : table -> table-cell 써도 보여지는건 똑같음 flex도 가능*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    
+}
+
+.mm{
+    /* vertical-align: middle; */
+    width: 100%;  
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;  
+    
+    
+}
+
+.box-yy, .box-mm, .box-dd{
+    padding: 10px 14px;
+}
+
+.box-mm, .box-dd{
+    margin-left: 10px;
+}
+
+.box-p, .box-e{
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 500px) {
+    #main {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+    }
+
+}
+
+/* -------------------------성별--------------------------------------- */
+
+#gender_box{
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    display: flex;
+    background-color: white;
+}
+
+.gender{
+    border-right: 1px solid #dadada;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    
+
+}
+
+.gender > label {
+    display: block;
+    width: 100%; height: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    
+    /* color: #666; */
+}
+
+input[type=radio]{
+    display: none;
+}
+
+
+.box-w{
+    border: none;
+}
+
+/* -------------------누르면 보여질 이미지------------------------ */
+
+.box_change{
+    background-color: rgb(146, 211, 93);
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    
+    border-right: 1px solid #dadada;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
+    width: 100%; height: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+   
+}
+
+.hide{
+    color: red;
+    font-size: 12px;
+    display: block;
+}
+
+
+
+.d-none{
+    display: none;
+}

@@ -1,0 +1,193 @@
+html,body{
+    height: 100%;
+    margin:0;
+}
+
+.d-none{
+    display: none !important;
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon{
+    display: inline-block;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.button{
+    width:100px;
+    background-color: #8cba34;
+    border: none;
+    color:#fff;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px;
+    border-radius: 4px;
+}
+    .button:hover{
+        background-color: #347961;
+        transition: 0.25s;
+    }
+/* --------------------------------------------------------------- */
+.password{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.buttons{
+    padding-top: 20px;
+}
+
+.login-button{
+   padding-left: 28px;
+   padding-bottom: 6px;
+}
+
+#login-info-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+    .login-form fieldset{
+        padding: 0;
+        padding-inline-start: 7px;
+        height: 40px;
+    }
+        .login-form fieldset label{
+            font-size: 14px;
+            font-weight: bold;
+            flex-basis: 55px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .login-form fieldset input[type=text],
+        .login-form fieldset input[type=password]
+        {
+            flex-grow: 1;
+            border: 0;
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #ebf6ff;
+ 
+        }
+        
+.login-check{
+    font-size: 13px;
+    font-weight: bo;
+}
+
+.easy-login{
+    display: inline-block;
+    text-align: center;
+}   
+    .easy-login ul{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+        .kakao-login{
+            background: url("../images/icon-kakao-login.png") no-repeat center;
+            height: 50px;
+            width: 50px;
+        }            
+        .facebook-login{
+            background: url("../images/icon-facebook-login.png") no-repeat center;
+            height: 50px;
+            width: 50px;
+        }  
+        .naver-login{
+            background: url("../images/icon-naver-login.png") no-repeat center;
+            height: 50px;
+            width: 50px;
+        }  
+
+/* --------------------------------------------------------------- */
+
+#root{
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* #header{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+} */
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+#aside{
+   margin-top: 30px;
+}
+
+/* @media screen and (min-width: 500px){
+    #root{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 360px 1fr;
+        grid-template-rows: 1fr 80px 250px 80px 2fr;
+        grid-template-areas: 
+        ". . ."
+        ". header ."
+        ". main ."
+        ". aside ."
+        ". . .";
+    }
+    #header{
+        grid-area: header;
+    }
+    #main{
+        grid-area: main;
+    }
+    #aside{
+        grid-area: aside;
+        display: flex;
+        justify-content: center;
+    }
+    .easy-login ul{
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 0;
+        width: 300px;
+    }  
+} */
+
+#header{  
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+body{
+    background-color: #ebf6ff;
+}
+
+#header > a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: none;
+    text-decoration: initial;
+    padding: 40px 40px 20px 40px;
+
+    color: rgb(92, 148, 100);
+}
+
+#header-line{
+    width: 100%;
+    border-top: 2px solid #8cba34;   
+}

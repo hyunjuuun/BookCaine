@@ -1,0 +1,89 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    font-family: Dotum,'돋움',Helvetica,sans-serif;
+}
+
+#header{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+body{
+    background-color: #ebf6ff;
+}
+
+#header > a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: none;
+    text-decoration: initial;
+    padding: 40px 40px 20px 40px;
+
+    color: rgb(92, 148, 100);
+}
+
+#header-line{
+    border-top: 2px solid #8cba34;   
+}
+
+
+#wrapper{
+    position: relative;
+    height: 100%;
+  
+}
+
+.main-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 350px;
+    height: 300px;
+    
+ 
+}
+
+.content{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 360px;
+}
+
+.btn-wrapper{
+    margin: 30px 0 30px;
+
+}
+
+
+
+.Sign_Go{
+    width: 90%;
+    cursor: pointer;
+    padding: 16px 0;
+    margin-bottom: 15px;
+    border: none;
+    background-color: rgba(104, 166, 247, 0.863);
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.Sign_Go:hover{
+    background-color: rgba(60, 138, 240, 0.863);
+}
+
+.Login_go{
+    width: 90%;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    padding: 16px 0;
+    font-size: 15px;
+    border-radius: 8px;
+    
+}
