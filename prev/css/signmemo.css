@@ -1,0 +1,133 @@
+html,body{
+    height: 100%;
+    margin:0;
+}
+
+
+h1{
+    padding: 20px;
+    margin: 0;
+    font-size: 25px;
+}
+/*------------------*/
+:root{
+    --color-box : #c5e98a;
+    --color-solid : #808080;
+    --color-button-solid:#CCC3C3;
+}
+/*---------------------------*/
+#root{
+    height: 100%;
+    
+    
+}
+
+.table {
+    border-top: 2px solid var(--color-solid);
+    border-collapse: collapse;
+    width: 100%;
+    padding: 10px;
+    
+    
+}
+
+
+th, td{ 
+    border-top: 1px solid var(--color-solid);
+    border-bottom: 1px solid var(--color-solid);
+    padding: 10px;
+    
+
+}
+
+th{
+    width: 110px;
+    border-right: 1px solid var(--color-solid);
+    background-color: var(--color-box);
+    text-align: right;
+    color:#fff;
+
+}
+
+.user-name .id-name .email-name{
+    font-family: "맑은 고딕";
+    color: black;
+    font-weight: bold;
+}
+.leave-button{
+    border: 1px solid var(--color-button-solid);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;
+    color :var(--color-button-solid);
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 265px;
+
+}
+
+.password{
+    margin-top: 12px;
+    
+    
+
+}
+.password-in{
+    padding: 5px;
+}
+.password-ch{
+    padding: 5px;
+    background-color: var(--color-box);
+    border-width: 1px;
+    border-radius: 4px;
+}
+.email-ch{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: var(--color-box);
+    border-width: 1px;
+    border-radius: 4px;
+
+}
+.email{
+    margin: 5px;
+    font-size: 15px;
+    font-family: "맑은 고딕";
+    padding: 6px 10px 7px 30px;
+    background-color: var(--color-box);
+    width: 180px;
+}
+p{
+    margin-top: 12px;
+    font-family: "맑은 고딕";
+    
+}
+
+@media screen and (min-width: 690px){
+
+    .table, main>h1 {
+        width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leave-button{
+        position: static;
+        display: inline-block;
+        margin-left: 400px;
+    }
+}
+
+@media screen and (min-width: 960px){
+    .table, main>h1 { 
+        width: 800px;
+    }
+
+    .leave-button{
+        margin-left: 500px;
+    }
+}

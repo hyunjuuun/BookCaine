@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find_id</title>
+    <link href="../../css/find_id.css" type="text/css" rel="stylesheet">
+    
+    <script>
+        function alertMessage(){
+            alert("인증번호가 발송되었습니다");
+        }
+    </script>
+</head>
+<body>
+    <div id="root"> 
+        <header id="header">
+            <div id="header">
+                <a href="../../index.html" class="logo" target="_blank" title="메인화면링크">BookCaine / 아이디 찾기</a>
+            </div>
+            <div id="header-line"></div>
+            
+            <div class="ex">
+                <div>휴대폰번호로 전송된 인증번호를 받아 입력해주세요</div>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="find-id-form">
+                <form>
+                    <fieldset>
+                        <legend class="d-none">이름입력필드</legend>
+                        <label>이름</label>
+                        <input type="text">
+                    </fieldset>
+                </form>
+                <div class="tel-input">
+                    <form>
+                        <fieldset>
+                            <legend class="d-none">전화번호입력필드</legend>
+                            <label>전화번호</label>
+                            <input type="tel">
+                        </fieldset>
+                    </form>
+                    <nav class="get-code-button">
+                        <a class="get-code" href=""><input class="button" onclick="alertMessage();" type="submit" value="인증번호 받기"></a>
+                    </nav>
+                </div>
+
+                <div class="code-input">
+                    <form>
+                        <fieldset>
+                            <legend class="d-none">인증번호입력필드</legend>
+                            <label>인증번호</label>
+                            <input type="number">
+                        </fieldset>
+                    </form>
+                    <nav class="other-button">
+                        <a class="submit-button" href="/login/login.html"><input class="button" type="submit" value="확인"></a>
+                    </nav>
+                </div>
+                <div>
+                    <nav class="find-pw-button">
+                        <a class="submit-button" href="../find_password/find_password.html"><input class="button" type="submit" value="비밀번호 찾기"></a>
+                    </nav>
+                </div>
+            </section>
+            
+
+        </main>
+</body>
+</html>

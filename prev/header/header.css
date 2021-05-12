@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.d-none{
+    display: none !important;
+}
+
+ul, ol{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.button{
+    width:70px !important;
+    background-color: #8cba34;
+    border: none;
+    color:#fff;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px;
+    border-radius: 4px;
+}
+    .button:hover{
+        background-color: #347961;
+        transition: 0.25s;
+    }
+
+/* ------------------ header ------------------ */
+.float-content{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    min-height:inherit;
+    position: relative;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: none;
+    text-decoration: initial;
+    padding: 24px 24px 24px 24px;
+    margin: 0;
+    color: rgb(47, 83, 52);
+    display: inline-block;
+    position: relative;
+}
+.logo-1{
+    font-size: 14px;
+}
+
+header{
+    background-color: #ccee8ed2;
+}
+
+#user ul{
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 5px;
+    top: 18px;
+}
+
+.book-search-form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+    .form-input{  
+        height: 30px;
+        width: 70%;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding-left: 5px;
+    }
+
+.quick-menu>ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+}
+    .quick-menu>ul>li:hover{
+        font-weight: bold;
+        transition: 0.05s;
+        border-bottom: 2px solid #347961;
+    }
+
+
+@media screen and (min-width: 690px){
+    
+    .book-search-form{
+        display: inline-block;
+        position: absolute;
+        left: 200px;
+        top: 34px;
+        padding-left: 0px;
+    }
+        .form-input{  
+            height: 33px;
+            width: 235px;
+        }
+
+    .quick-menu>ul{
+        justify-content: unset;
+        gap: 100px;
+        margin: 0px 0px 0px 40px;
+    }   
+
+}
+
+@media screen and (min-width: 960px){
+    .float-content{
+        width:960px;
+    }
+
+    #user ul{
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0px;
+        top: 18px;
+    }
+
+    .book-search-form{
+        display: inline-block;
+        position: absolute;
+        left: 200px;
+        top: 34px;
+    }
+        .form-input{  
+            height: 33px;
+            width: 300px;
+        }  
+}

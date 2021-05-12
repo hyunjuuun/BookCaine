@@ -1,0 +1,232 @@
+html,body{
+    height: 100%;
+    margin:0;
+}
+
+
+/*--------------------------------------*/
+:root{
+    --color-box : #c5e98a;
+    --color-text:#28A828;
+}
+
+
+
+.d-none{
+    display: none !important;
+}
+
+/* ------------------ header ------------------ */
+
+header{
+    background-color: #ccee8ed2;
+}
+
+#service-title h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    text-align: center;
+}
+
+/* .book-search-form fieldset{
+    background-color: white;
+} */
+
+    .book-search-form input{
+        width: 100%;
+        height: 36px;
+    }
+
+.quick-menu>ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*---------------------------------------*/
+#root{
+    height: 100%;
+    display: grid;
+    
+    grid-template-rows: 170px 70px 1fr 100px;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "main"
+    "footer";
+
+    
+}
+.form{
+    padding: 40px;
+}
+
+fieldset{
+    border: none;
+}
+
+.fieldset1{
+    padding: 0;
+   
+}
+.fieldset2{
+    
+    text-align: center;
+    font-size: 15px;
+
+}
+
+
+.signout{
+    color: var(--color-text);
+    
+}
+.check-box{
+    font-family: "맑은 고딕" 'Courier New', Courier, monospace;
+    font-size: 15px;
+   
+}
+
+.title{
+    color: var(--color-text);
+    font-family: "맑은 고딕";
+    font-size: medium;
+}
+
+.button-group{
+    text-align: center;
+   
+    margin-top: 50px;
+
+
+    
+  }
+  
+.cancel-button{
+    
+    transition: background-color .5s;
+    font-family: "맑은 고딕";
+    width: 100px;
+    height: 40px;
+
+        
+}
+
+.cancel-button:hover{
+    color: #808991;
+
+    
+
+    background-color: rgb(161, 159, 159);
+  
+    
+    border-radius: 4px;/*꼭지점(테두리) 둥글게하는 코드*/
+}
+
+.out-button{
+    background-color: #279B27;
+    transition: background-color .5s;
+    font-family: "맑은 고딕";
+    color: #ffff;
+    
+    width: 100px;
+    height: 40px;
+   
+    border-radius: 4px;/*꼭지점(테두리) 둥글게하는 코드*/
+
+}
+
+.out-button:hover{
+    background-color: green;
+
+
+
+}
+
+.password{
+    width: 180px;
+    margin: 20px;
+    padding: 10px;
+    margin:0;
+    
+}
+.full-aticle{
+    padding: 8px 8px 8px 0px;
+  
+}
+.full-aticle .article{
+    
+    margin-top: 20px;
+    
+    
+    background: #64DB99;
+
+    border: 1px solid #50C785;
+    border-radius: 3px;
+
+
+}
+.article{
+   position: relative;
+   
+
+    
+}
+
+.article-icon{
+    background: url("images/pngwing.com.png")no-repeat center;
+    background-size: contain;
+    top: 10px;
+    
+    height: 15px;
+    width: 15px;
+    padding-left: 15px;
+    margin: 0;
+    position: absolute;
+
+}
+.fieldset2{
+    text-align: center;
+}
+.Hidden-yes{
+    margin-top: 20px;
+    
+    display: none;
+    border-style: none;
+    padding: 0;
+}
+
+.end-ckeckbox-txt{
+    
+    
+    font-family: "맑은고딕";
+    font-weight: 700;
+
+}
+
+.p{
+    margin: 0;
+    padding: 12px 30px 12px 30px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/*--------header2--------------*/
+/* .body-colors{
+    background-color: var(--color-box);
+
+}
+
+.Bookcaine{
+    margin: 20px;
+}
+.search-div{
+    margin: 0px;
+    padding: 0px;
+}
+.search-box{
+    margin: 20px 10px 10px 10px;
+    padding: 10px 8px 10px 30px;
+    height: 20px;
+    width: 400px;
+} */

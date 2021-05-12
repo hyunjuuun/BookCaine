@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>북카인 회원가입</title>
+    <link href="../css/Sign_Up.css" type="text/css" rel="stylesheet">
+    <script src="Sign_up.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="메인화면 링크~" title="메인화면">BookCaine</a>
+    </header>
+
+    <div class="line">
+
+    </div>
+
+    <div id="wrapper">
+
+        <div id="main">
+
+            <div>
+                <span class="box">
+                    <input type="text" class="txt" id="ID_txt" value="" placeholder="아이디" maxlength="15">
+                </span>
+                <span class="hide"></span>
+            </div>
+
+            <div>
+                <span class="box">
+                    <input type="password" class="txt" id="PW_txt" placeholder="비밀번호" maxlength="20">
+                </span>
+                <span class="hide"></span>
+            </div>
+            
+
+            <div>
+                <span class="box">
+                    <input type="password" class="txt" id="PWR_txt" placeholder="비밀번호 재확인" maxlength="20">
+                </span>
+                <span class="hide"></span>
+            </div>
+
+            <div>
+                <span class="box">
+                    <input type="text" class="txt" id="NAME_txt" placeholder="이름" maxlength="10">
+                </span>
+                <span class="hide"></span>
+            </div>
+            <!------------------------------------------생년월일----------------------------------------------------->
+            <div class="date">
+        
+                <span class="box box-yy">
+                    <input type="text" class="txt" id="yy" placeholder="년(4자)" maxlength="4">
+                </span>
+           
+                <span class="box box-mm">
+                    <select class="mm">
+                        <option>월</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                </span>
+
+                <span class="box box-dd">
+                    <input type="text" class="txt" id="dd" placeholder="일" maxlength="2">
+                </span>
+            </div>
+
+            <h3>성별</h3>
+            <div id="gender_box">
+
+                <span id="box-m" class="gender">
+                    <input type="radio" id="man" name="gender" onclick="box_change()"> <label for="man"> 남자 </label>
+                </span>
+                <span id="box-w" class="gender">
+                    <input type="radio" id="woman" name="gender" onclick="box_change()"> <label for="woman"> 여자 </label>
+                </span>
+                <!--라디오 버튼에서, 텍스트를 눌렀을때 같이 선택되게 하려면  id속성과 label for속성을 같게 설정한다. -->
+            </div>
+            <!--------------------------------------------------------------------------------------------------------- -->
+
+
+            <h3>휴대전화(선택)</h3>
+            <span class="box box-p">
+                <input type="text" class="txt" placeholder="선택입력" maxlength="15">
+            </span>
+
+
+            <h3>이메일(선택)</h3>
+            <span class="box box-e">
+                <input type="text" class="txt" placeholder="선택입력" maxlength="30">
+            </span>
+
+            <!-- <input type="button" class="btn" value="회원가입 완료"> -->
+            <div class="btn_area">
+                <button type="button" onclick="location.href='PupUp.html' " class="btn">
+                    <span>회원가입 완료</span>
+                </button>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- <script src="Sign_up.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* ------------------ header ------------------ */
+
+/* header{
+    background-color: #ccee8ed2;
+}
+
+#service-title h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    text-align: center;
+}
+*/
+.icon-cog{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 24px;
+    right: 30px;
+}
+
+.profile{
+    font-weight: bold;
+    border-bottom: 2px solid #347961;
+}
+
+/*
+ .book-search-form fieldset{
+    background-color: white;
+} 
+
+     .book-search-form input{
+        width: 100%;
+        height: 36px;
+    }
+
+.quick-menu>ul{
+    display: flex;
+    justify-content: space-around;
+} */ 
+
+/* ------------------ main ------------------ */
+
+main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 50px 1fr 36px 1fr;
+    grid-template-areas: 
+    "main group"
+    "edit edit"
+    "read read"
+    "history history"
+    "daily daily";
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.main-profile, .group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-profile{
+    grid-area: main;
+}
+
+    .main-profile .user-name{
+        font-weight: bold;
+    }
+
+    .main-profile>img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .main-profile .status{
+        font-size: 0.7rem;
+    }
+
+    .main-profile .follow{
+        display: flex;
+        width: 180px;
+        font-size: 0.7rem;
+        justify-content: space-evenly;
+    }
+
+.group{
+    grid-area: group;
+}
+
+.group h1{
+    font-size: 18px;
+    margin: 8px;
+}
+
+.group li{
+    font-size: 13px;
+    margin: 5px;
+}
+
+.profile-edit{
+    grid-area: edit;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-edit>a{
+    display: inline-block;
+    height: 30px;
+    width: 95%;
+}
+
+.profile-edit button{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.books-done{
+    grid-area: read;
+}
+
+    .books-done>.books-done-top{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .books-done>.books-done-top > h1{
+        font-size: 18px;
+        margin: 0 24px;
+    }
+
+    .books-done>.books-done-list ul{
+        display: flex;
+        gap: 15px;
+        justify-content: space-evenly;
+        margin-top: 32px;
+    }
+
+    .books-done>.books-done-list ul>a{
+        width: 100px;
+    }
+
+    .books-done-list img{
+        width: 100px;
+        border: 0.5px solid black;
+    }
+
+    .books-done-list img+li{
+        text-align: center;
+    }
+
+.history{
+    grid-area: history;
+}
+
+.history>ul{
+    display: flex;
+    border: 0.5px solid gray;
+    padding: 7px;
+    justify-content: space-evenly;
+}
+    .history li{
+        font-size: 13px;
+    }
+
+.daily{
+    grid-area: daily;
+}
+
+    .daily img{
+        margin-top: 40px;   
+        width: 100%;
+    }
+
+@media screen and (min-width: 960px){
+
+    /* header>section{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    #service-title{
+        display: inline-block;
+    }
+
+    .book-search-form{
+        display: inline-block;
+        width: 306px;
+        margin-left: 20px;
+    }
+
+    .quick-menu>ul{
+        justify-content: unset;
+        gap: 100px;
+    } */
+
+    #main{
+        width: 960px;
+        margin: 0 auto;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 330px 330px 330px 1fr;
+        grid-template-rows: 20px 1fr 1fr;
+        grid-template-areas:
+        ". . . . ."
+        ". main read read ."
+        ". group daily daily .";
+    }
+
+    .main-profile{
+        grid-area: main;
+        height: fit-content;
+    }
+    
+        .main-profile>img{
+            width: 200px;
+            height: 200px;
+        }
+
+        .main-profile .user-name{
+            font-size: 1.2rem;
+        }
+
+        .main-profile .status{
+            font-size: 1rem;
+        }
+    
+        .main-profile .follow{
+            font-size: 0.9rem;
+        }
+
+    .profile-edit{
+        grid-area: main;
+        height: fit-content;
+        margin-top: 280px;
+    }
+
+    .group{
+        grid-area: group;
+    }
+
+    .history{
+        grid-area: main;
+        margin-top: 310px;
+    }
+    
+    img{
+        width: 80px;
+    }
+
+    .daily img{
+        margin-top: 0;   
+    }
+    
+}

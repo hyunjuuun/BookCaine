@@ -1,0 +1,125 @@
+html,body{
+    height: 100%;
+    margin:0;
+}
+
+.d-none{
+    display: none !important;
+}
+
+.button{
+    width:100px;
+    background-color: #8cba34;
+    border: none;
+    color:#fff;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 13px;
+    margin: 4px;
+    border-radius: 4px;
+}
+    .button:hover{
+        background-color: #347961;
+        transition: 0.25s;
+    }
+
+/*------------------------------------------------------------------------*/
+#find-id-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+    .find-id-form form{
+        display: inline-block;
+    }
+
+    .find-id-form fieldset{
+        padding: 0;
+        padding-inline-start: 7px;
+        height: 40px;
+        width: 210px;
+    }
+        .find-id-form fieldset label{
+            font-size: 14px;
+            font-weight: bold;
+            flex-basis: 55px;
+            line-height: 45px;
+            text-align: center;
+        }
+        .find-id-form fieldset input[type=text],
+        .find-id-form fieldset input[type=tel],
+        .find-id-form fieldset input[type=number]
+        {
+            width: 120px;
+            flex-grow: 1;
+            border: 0;
+            padding-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #ebf6ff;
+        }
+
+.get-code-button,
+.other-button
+{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.tel-input, .code-input{
+    display: flex;
+    margin-top: 5px;
+}
+
+.find-pw-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ex{
+    text-align: center;
+    margin-top: 30px;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(75, 75, 75);
+}
+
+/* --------------------------------------------------------------- */
+
+#root{
+    height: 100%; 
+    
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#header{  
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+body{
+    background-color: #ebf6ff;
+}
+
+#header > a{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: none;
+    text-decoration: initial;
+    padding: 40px 40px 20px 40px;
+
+    color: rgb(92, 148, 100);
+}
+
+#header-line{
+    width: 100%;
+    border-top: 2px solid #8cba34;   
+}
