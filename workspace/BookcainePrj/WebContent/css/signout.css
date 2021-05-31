@@ -18,7 +18,7 @@ html,body{
 
 /* ------------------ header ------------------ */
 
-header{
+/* header{
     background-color: #ccee8ed2;
 }
 
@@ -28,9 +28,9 @@ header{
     text-align: center;
 }
 
-/* .book-search-form fieldset{
+.book-search-form fieldset{
     background-color: white;
-} */
+}
 
     .book-search-form input{
         width: 100%;
@@ -40,22 +40,13 @@ header{
 .quick-menu>ul{
     display: flex;
     justify-content: space-around;
-}
+} */
 
 
 /*---------------------------------------*/
 #root{
     height: 100%;
-    display: grid;
-    
-    grid-template-rows: 170px 70px 1fr 100px;
-    grid-template-areas: 
-    "header"
-    "aside"
-    "main"
-    "footer";
-
-    
+  
 }
 .form{
     padding: 40px;
@@ -211,6 +202,23 @@ fieldset{
     font-weight: bold;
 }
 
+
+@media screen and (min-width: 690px){
+	#root{
+	  	height: 690px;
+		margin-left: auto;
+		margin-right: auto;
+	}  
+ 
+
+}
+
+@media screen and (min-width: 960px){
+    #root{
+        width:960px;
+    }
+
+}
 /*--------header2--------------*/
 /* .body-colors{
     background-color: var(--color-box);

@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* ------------------ header ------------------ */
+
+/* header{
+    background-color: #ccee8ed2;
+}
+
+#service-title h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    text-align: center;
+}
+
+    .book-search-form input{
+        width: 100%;
+        height: 36px;
+    }
+
+.quick-menu>ul{
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* ------------------ main ------------------ */
+#book-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#book-image > img{
+    width: 150px;
+    border: 0.5px solid black;
+    margin-top: 20px;
+}
+
+#book-description div{
+    text-align: center;
+}
+
+#book-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#writer{
+    font-size:15px;
+    color: gray;
+}
+
+.btn input {
+    padding: 0;
+    width: 80%;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    background-color: tomato;
+    color: white;
+    border: 1px solid tomato;
+    border-radius: 8px;
+}
+
+#write{
+	margin-top: 10px;
+}
+
+#write input{
+	background-color: white;
+	border-color: tomato;
+	color: black;
+}
+
+#review{
+    margin: 0 24px;
+}
+    #review h1, #friends h1{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    #review .review{
+        margin: 24px;
+        background-color: #b6c2b7;
+        background-color: #e3e1e3;
+        border-radius: 3%;
+        padding-bottom: 8px;
+    }
+    
+    #review .review p{
+    	padding: 12px;
+    }
+    
+    #review .review .review-attr{
+        color: gray;
+        margin-left: 8px;
+        font-size: 13px;
+    }
+    
+    #review .review .review-btn-group{
+        margin-left: 8px;
+        color: tomato;
+    }
+    
+    #review .review .review-btn-group #like-button{
+  		all: unset;
+  		cursor: pointer;
+    }
+    
+    #review .review .review-btn-group #like-button:active{
+  		background-color: tomato;
+  		color: white;
+    }
+    
+    #review .review .review-btn-group a{
+  		color: tomato;
+    }
+    
+
+#review .reviewer{
+    margin: 8px;
+    font-size: 15px;
+}
+
+#challenge > div{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#challenge > div > input{
+    width: 100%;
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    background-color: teal;
+    border-radius: 8px;
+    border-color: teal;
+    
+}
+
+#for-bottom-btn{
+    height: 36px;
+}
+
+#friends{
+    margin-left: 20px;
+}
+
+/* ------------------ 諛섏쓳�삎 ------------------ */
+
+@media screen and (min-width: 690px){
+    
+    main{
+        margin-top: 10px;
+        display: grid;
+        width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: 100px 150px 1fr 100px;
+        grid-template-areas:
+        "image name"
+        "image wish"
+        "review review"
+        "friends friends";
+    }
+    
+    #book-image{
+        grid-area: image;
+    }
+    
+    #book-image > img{
+        height: 216px;
+        margin-left: 50px;
+    }
+
+    #book-description{
+        grid-area: name;
+        margin-top: 30px;
+    }
+
+    #challenge, #wish, #write{
+        grid-area: wish;
+        margin-top: 5px;
+    }
+
+    #review {
+        grid-area: review;
+    }
+        #review h1{
+            margin-top: 50px;
+        }
+    
+    #challenge > div{
+        position: relative;
+        top: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #write {
+        margin-top: 85px;
+    }
+
+    #friends{
+        grid-area: friends;
+        margin-left: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 960px){
+    main{
+        width: 960px;
+        grid-template-columns: 180px 1fr 270px;
+        grid-template-rows: 100px 150px 1fr;
+        grid-template-areas:
+        "image name ."
+        "image wish ."
+        "review review friends";
+    }
+
+    .temp-hr{
+        border: 0;
+        margin: 0;
+    }
+    
+    #book-description{
+        margin: auto;
+    }
+    
+    #challenge, #wish{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+        #friends h1{
+            margin-top: 40px;
+        }
+}

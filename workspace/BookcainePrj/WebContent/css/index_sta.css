@@ -1,0 +1,90 @@
+.d-none{
+    display: none !important;
+    }
+
+/*------------------------------*/
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.statistic-form{
+    margin-top:20px;
+}
+
+/* {
+    list-style: none;
+    padding:0;
+    margin: 0;
+} */
+
+/*-------------------------------*/
+
+#header{
+    background-color: #ccee8ed2;
+    display:flex;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+
+}
+
+/* #header .button{
+    margin-right: auto;
+  
+} */
+
+
+.ham{
+    width: 24px;
+    height: 24px;
+    background: url("../images/ic_menu_black_24dp_2x.png") no-repeat;
+}
+
+.main-top h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    /* padding-left: 12px; */
+    /* display: inline-block; */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+
+/* #header{
+    background-color: #b1d6c1;
+}
+
+#header>h1{
+    font-family: "맑은 고딕";
+    font-size: 20px;
+    text-align: center;
+    color: #2e8b57;
+} */
+
+#aside{
+    display: flex;
+    justify-content: center;
+    font-size: 12px; 
+}
+
+#main{
+    text-align: center;
+    
+}
+
+.box1 dd{
+    margin:0px;
+}
+
+.box2 dd{
+    margin: 0;
+}
+
+.btn{
+    margin-top: 20px;
+}

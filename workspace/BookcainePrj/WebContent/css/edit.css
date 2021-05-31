@@ -26,6 +26,10 @@ li{
     list-style: none;
 }
 
+hr{
+	margin-right: 12px;
+}
+
 /* --------------------------------------- */
 .icon-cog{
     position: absolute;
@@ -47,6 +51,7 @@ form > section{
     display: flex;
     justify-content: space-between;
     padding: 0 8px;
+    margin-right: 12px;
 }
 
 form > section > span{
@@ -71,6 +76,7 @@ form > img{
 
 form * {
     margin-left: 12px;
+    margin-right: 12px;
 }
 
 form .input{

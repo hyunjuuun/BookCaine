@@ -1,0 +1,116 @@
+.d-none{
+    display: none !important;
+    }
+
+.truncate{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    }
+
+/* .w-1{
+    width: 100px;
+} */
+
+/*------------------------------*/
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}  
+
+ul{
+    list-style: none;
+    padding:0;
+}
+
+/*-------------------------------*/
+
+/* #root{
+    position: relative; */
+
+#header{
+        background-color: #ccee8ed2;
+        display:flex;
+        height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        align-items: center;
+    }
+    
+#main-top h1{
+        margin-top: 0;
+        padding-top: 18.72px;
+        padding-left: 12px;
+        display: inline-block;
+    }
+
+.font{
+    font-size: 12px;
+}
+    
+
+/* #header{
+    background-color: #b1d6c1;
+    
+}
+
+#header>h1{
+    font-family: "맑은 고딕";
+    font-size: 20px;
+    text-align: center;
+    color: #2e8b57;
+} */
+
+#aside{
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#main .category{
+    margin-top: 60px;
+}
+
+
+/* #main{
+    display: flex;
+    justify-content: center;
+} */
+
+#form{
+
+    
+    
+}
+
+.one, .two, .three, .four, .five, .six{
+    display: flex;
+}
+
+.w-1{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.m-1{
+    margin-left: 53px;
+}
+
+.m{
+    margin-left: 70px;
+}
+
+.m-2{
+    margin-left: 83px;
+}
+
+
+.button{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+}

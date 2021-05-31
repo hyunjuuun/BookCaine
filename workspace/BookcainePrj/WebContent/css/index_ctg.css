@@ -1,0 +1,71 @@
+.d-none{
+    display: none !important;
+    }
+
+/*------------------------------*/
+
+ html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}  
+
+ul{
+    list-style: none;
+    padding:0;
+}
+
+/*-------------------------------*/
+header{
+    background-color: #ccee8ed2;
+    display:flex;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+#main{
+    
+}
+
+#main-top h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    padding-left: 12px;
+    display: inline-block;
+}
+
+/* #header{
+    background-color: #b1d6c1;
+}
+
+#header>h1{
+    font-family: "맑은 고딕";
+    font-size: 20px;
+    text-align: center;
+    color: #2e8b57;
+} */
+ 
+#main>.check{
+    margin-top: 30px;
+    margin-left: 20px; 
+    text-align: center;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine";
+}
+
+.button-all{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+

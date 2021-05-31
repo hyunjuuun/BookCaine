@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.d-none{
+    display: none !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* ------------------ header ------------------ */
+
+/* header{
+    background-color: #ccee8ed2;
+}
+
+#service-title h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    text-align: center;
+}
+
+    .book-search-form input{
+        width: 100%;
+        height: 36px;
+    }
+
+.quick-menu>ul{
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* ------------------ main ------------------ */
+
+#header{
+    background-color: #ccee8ed2;
+    display:flex;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+#main-top h1{
+    margin-top: 0;
+    padding-top: 18.72px;
+    padding-left: 12px;
+    display: inline-block;
+}
+
+#book-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#book-image > img{
+    width: 100px;
+    border: 0.5px solid black;
+    margin-top: 20px;
+}
+
+.zero{
+    display: flex;
+    justify-content: center;
+}
+
+.m-1{
+    margin-top: 3px;
+    margin-left: 70px;
+}
+
+#book-description input{
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+
+    margin-top: 3px;
+}
+
+.book-name{
+}
+
+.writer{
+    color: gray;
+}
+
+.one{
+    margin-left: 0;
+}
+
+.m{
+    margin-top: 3px;
+    margin-left: 0;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3px;
+    /* margin: 15px auto; */
+    width: 300px;
+    height: 100px;
+    border: 1px solid gray;
+    font-size: 12px;
+}
+
+#table{
+    border-top: 1px solid rgb(236, 233, 233);
+    border-bottom: 1px solid rgb(236, 233, 233);
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+#table tr{
+    height: 15px;
+    font-size: 12px;
+}
+
+#table tr:nth-child(2){
+    border-bottom: 1px solid rgb(236, 233, 233);
+}
+
+.check_button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* 
+.zero, .one, .two, .three, .four, .fourfour, .five, .six{
+    display: flex;
+    justify-content: center;
+}
+
+.m-1{
+    margin-left: 60px;
+    margin-top: 3px;
+}
+
+.m{
+    margin-left: 50px;
+    margin-top: 3px;
+}
+
+.text{
+    width: 200px;
+    height: 100px;
+}
+
+.check{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center; */

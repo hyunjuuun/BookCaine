@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/book_add.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="root">
+        <header id="header">
+            <section>
+                <h1 class="d-none">메인</h1>
+                <section id="main-top">
+                    <h1>관리자 도서 등록 페이지 | Bookcaine</h1>
+                </section>
+            </section>
+        </header>
+        <aside id="aside">
+            <div class="font">
+                <p>도서관리> 도서리스트><b>도서등록관리</b></p>
+            </div>
+        </aside>
+        <main id="main">
+            <form id="form">
+                <div class="zero">
+                    <div class="w-1">이미지</div>
+                    <input class="m-1" type="file">
+                </div> 
+                <div class="one">
+                    <div class="w-1">분류 선택</div>
+                    <select class="m">
+                        <option>종합</option>
+                        <option>소설</option>
+                        <option>비소설</option>
+                        <option>시사</option>
+                        <option>자기계발</option>
+                        <option>인문</option>
+                        <option>역사</option>
+                        <option>외국어</option>
+                        <option>유아</option>
+                        <option>기타</option>
+                    </select> 
+                </div>
+                <div class="two">
+                    <div class="w-1">제목</div>
+                    <input class="m" type="search" value="해리포터">
+                </div> 
+                <div class="three">
+                    <div class="w-1">저자</div>
+                    <input class="m" type="search" value="빌게이츠">
+                </div>
+                <div class="four">
+                    <div class="w-1">책 소개</div>
+                    <input class="m text" type="text" value="줄거리는~">
+                </div>
+                <div class="fourfour">
+                    <div class="w-1">저자 소개</div>
+                    <input class="m text" type="text" value="저자는~">
+                </div>
+                <div class="five">
+                    <div class="w-1">진열 여부</div>
+                    <select class="m">
+                        <option>Y</option>
+                        <option>N</option>
+                    </select>
+                </div>
+            </form>
+            <section>
+                <form class="check">
+                    <input type="button" value="미리보기">
+                    <a href="list_total.html"><input type="button" value="상품 등록"></a>
+                </form>
+            </section>
+        </main>
+    </div>      
+</body>
+</html>
+
+
+
+
+
+        <!-- <main id="main">
+            <section class= "category">
+                <h1 class="d-none">도서관리 테이블</h1>
+                <table class="table">
+                                               
+                    <tr>
+                        <td class="w-1">분류 선택</td>
+                        <td class="one_input">
+                           <form>
+                               <select>
+                                       <option>종합</option>
+                                       <option>소설</option>
+                                       <option>비소설</option>
+                                        <option>시사</option>
+                                       <option>자기계발</option>
+                                       <option>인문</option>
+                                       <option>역사</option>
+                                       <option>외국어</option>
+                                       <option>유아</option>
+                                       <option>기타</option>
+                               </select>
+                           </form> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-1">검색어</td>
+                        <td>
+                            <input type="search" value="해리포터">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-1">판매가</td>
+                        <td>
+                            <input type="range" min="1" max="100000" step="1000">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="w-1">진열 여부</td>
+                        <td class="one_input">
+                            <form>
+                                <select>
+                                        <option>Y</option>
+                                        <option>N</option>
+                                </select>
+                            </form> 
+                         </td>
+                    </tr>
+                    <tr>
+                        <td class="w-1">등록일</td>
+                        <td><input type="date"></td>   
+                    </tr>
+                    <tr>
+                        <td class="w-1">이미지</td>
+                        <td>
+                            <input type="file">
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td class="w-1">상품설명</td>
+                        <td><input type="text" style="width:250px;height:100px;"></td>   
+                    </tr>
+                </tbody>
+                </table>
+            </section> -->
